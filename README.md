@@ -27,8 +27,21 @@ node faq_bot.js
 Запуск классификатора:
 
 ```bash
-node classifier.js.
+node classifier.js
 ```
 
 - `messages.txt` — пять обращений из задания;
 - `classifier.js` — скрипт классификации и подготовки ответов.
+
+## Проверка дефекта по изображению
+
+`defect_detector.js` принимает путь к PNG-файлу и проверяет, много ли на нём красного цвета. Если красные пиксели занимают больше 30% изображения, он печатает `DEFECT`, иначе — `OK`. В репозитории есть два примера: `ok.png` и `defect.png`.
+
+Запуск:
+
+```bash
+node defect_detector.js ok.png
+node defect_detector.js defect.png
+```
+
+Первый пример выдаёт `OK`, второй — `DEFECT`.
