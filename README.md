@@ -27,7 +27,7 @@ node faq_bot.js
 Запуск классификатора:
 
 ```bash
-node classifier.js
+node classifier.js.
 ```
 
 - `messages.txt` — пять обращений из задания;
